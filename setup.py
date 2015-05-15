@@ -11,7 +11,7 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 
 setup(
     name="icpy3",
-    version="0.0.0",
+    version="0.1.dev1",
     description="A simple The imaging Source python binding library",
     long_description=long_description,
     url="",
