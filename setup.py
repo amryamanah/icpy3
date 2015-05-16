@@ -1,4 +1,4 @@
-__author__ = 'amryf'
+__author__ = 'amry fitra'
 
 from setuptools import setup, find_packages
 from codecs import open
