@@ -2183,6 +2183,11 @@ class IC_GrabberDLL(object):
     #*/
     #int IC_SetAVIFileName(HGRABBER hlGrabber,char * FileName);
     #
+    set_avi_filename = _ic_grabber_dll.IC_SetAVIFileName
+    set_avi_filename.restype = c_int
+    set_avi_filename.argtypes = (GrabberHandlePtr,
+                                 c_char_p)
+
     #////////////////////////////////////////////////////////////////////////////
     #/*! Pauses or continues AVI Capture. This allows, to start the stream and see the live video
     #    but images are not saved into the AVI file.
@@ -2197,6 +2202,10 @@ class IC_GrabberDLL(object):
     #
     #int IC_enableAVICapturePause(HGRABBER hlGrabber, int Pause );
     #
+    enable_avi_capture_pause = _ic_grabber_dll.IC_enableAVICapturePause
+    enable_avi_capture_pause.restype = c_int
+    enable_avi_capture_pause.argtypes = (GrabberHandlePtr,
+                                         c_int)
 
     def __init__(self):
         raise Exception("You probably don't want to instantiate this class!")
